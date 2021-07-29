@@ -144,6 +144,7 @@ header {
   .sneakers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .sneaker-card {
       background: #ffffff;
       border: 1px solid #f3f3f3;
@@ -180,6 +181,20 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .card-text {
+          span {
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #bdbdbd;
+          }
+          p {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
 
         .card-text {
           display: flex;
