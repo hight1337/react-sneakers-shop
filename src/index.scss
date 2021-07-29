@@ -13,7 +13,8 @@ h4,
 h5,
 h6,
 a,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -36,10 +37,16 @@ body {
   max-width: 1080px;
   margin: 50px auto;
 }
+
+.conatainer {
+  padding: 0px 45px;
+}
+
 header {
-  padding: 50px 45px 45px 45px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding: 50px 45px 45px 45px;
 
   .header-left {
     display: flex;
@@ -81,6 +88,102 @@ header {
           line-height: 17px;
           color: #5c5c5c;
           margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 40px;
+  padding-bottom: 30px;
+
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    .serach {
+      position: relative;
+
+      input {
+        position: relative;
+        border: 1px solid #f3f3f3;
+        border-radius: 10px;
+        width: 250px;
+        padding: 13px 0px 13px 40px;
+        z-index: 1;
+        outline: none;
+
+        font-size: 14px;
+        line-height: 17px;
+        color: #c4c4c4;
+
+        &::placeholder {
+          font-size: 14px;
+          line-height: 17px;
+          color: #c4c4c4;
+        }
+      }
+
+      svg {
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        z-index: 2;
+      }
+    }
+  }
+  .sneakers {
+    display: flex;
+    flex-wrap: wrap;
+    .sneaker-card {
+      background: #ffffff;
+      border: 1px solid #f3f3f3;
+      border-radius: 40px;
+      width: 210px;
+      padding: 25px;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+      .add-favorite-btn {
+        position: absolute;
+        top: 30;
+        left: 25;
+      }
+
+      button {
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        border-radius: 8px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+      p {
+        margin: 14px 0;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-text {
+          display: flex;
+          flex-direction: column;
         }
       }
     }
