@@ -1,8 +1,95 @@
 import React, { useState, useEffect } from "react";
+import { GrClose } from "react-icons/gr";
+import { BsArrowRightShort } from "react-icons/bs";
 
 function App() {
   return (
     <div className="wrapper">
+      <div className="drawer-overlay">
+        <div className="drawer">
+          <div className="drawer-header">
+            <h2>Корзина</h2>
+            <GrClose className="close-icon" />
+          </div>
+          <div className="items">
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-1.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-2.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <ul>
+            <li>
+              <span>Итого: </span>
+              <div></div>
+              <b>21 498 руб. </b>
+            </li>
+            <li>
+              <span>Налог 5%: </span>
+              <div></div>
+              <b>1074 руб. </b>
+            </li>
+          </ul>
+          <button>
+            Оформить заказ <BsArrowRightShort />
+          </button>
+        </div>
+      </div>
       <header>
         <div className="header-left">
           <img width={40} height={40} src="images/header_logo.png" alt="logo" />
