@@ -282,6 +282,8 @@ header {
     }
     .items {
       flex: 1;
+      overflow: auto;
+      margin-bottom: 30px;
     }
     .cart-item {
       display: flex;
@@ -348,7 +350,7 @@ header {
       }
     }
 
-    button {
+    .btn {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -367,6 +369,9 @@ header {
 
       &:hover {
         background-color: darken($color: #9dd558, $amount: 10);
+        svg {
+          transform: translateX(5px);
+        }
       }
 
       &:active {
@@ -378,6 +383,7 @@ header {
         right: 25px;
         width: 32px;
         height: 32px;
+        transition: transform 0.2s ease-in-out;
       }
     }
   }

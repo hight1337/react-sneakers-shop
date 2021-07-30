@@ -72,6 +72,166 @@ function App() {
                 alt=""
               />
             </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
+            <div className="cart-item">
+              <img
+                className="sneaker-img"
+                width={70}
+                height={70}
+                src="images/sneakers/sneaker-3.jpeg"
+                alt="sneaker-img"
+              />
+              <div>
+                <p>Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              <img
+                className="cart-item-delete"
+                width={32}
+                height={32}
+                src="images/cart-item-delete.svg"
+                alt=""
+              />
+            </div>
           </div>
           <ul>
             <li>
@@ -85,7 +245,7 @@ function App() {
               <b>1074 руб. </b>
             </li>
           </ul>
-          <button>
+          <button className="btn">
             Оформить заказ <BsArrowRightShort />
           </button>
         </div>
