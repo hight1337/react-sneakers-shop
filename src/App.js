@@ -3,13 +3,25 @@ import { GrClose } from "react-icons/gr";
 import { BsArrowRightShort } from "react-icons/bs";
 
 function App() {
+  const [showShopingCrat, toggleShopingCart] = useState(false);
+  console.log(showShopingCrat);
+
   return (
     <div className="wrapper">
-      <div className="drawer-overlay">
+      <div
+        className={
+          showShopingCrat
+            ? "drawer-overlay showShopingCart"
+            : "drawer-overlay hideShopingCart "
+        }
+      >
         <div className="drawer">
           <div className="drawer-header">
             <h2>Корзина</h2>
-            <GrClose className="close-icon" />
+            <GrClose
+              className="close-icon"
+              onClick={() => toggleShopingCart(false)}
+            />
           </div>
           <div className="items">
             <div className="cart-item">
@@ -262,6 +274,7 @@ function App() {
         <ul className="header-right">
           <li>
             <svg
+              onClick={() => toggleShopingCart(true)}
               width="20"
               height="20"
               viewBox="0 0 20 20"
