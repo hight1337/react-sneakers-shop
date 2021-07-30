@@ -160,6 +160,23 @@ header {
         position: absolute;
         top: 30;
         left: 25;
+
+        svg {
+          path {
+            transition: fill 0.2s linear;
+            fill: none;
+            stroke: #ececec;
+          }
+        }
+        // &:hover {
+        //   background-color: #fef0f0;
+        //   svg {
+        //     path {
+        //       stroke: none;
+        //       fill: #ff8585;
+        //     }
+        //   }
+        // }
       }
 
       button {
@@ -169,9 +186,16 @@ header {
         width: 32px;
         height: 32px;
         cursor: pointer;
+        transition: background-color 0.2s linear;
+
+        &:hover {
+          background-color: #dbdbdb50;
+        }
       }
-      p {
+
+      h5 {
         margin: 14px 0;
+        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: #000000;
